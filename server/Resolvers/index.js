@@ -6,6 +6,9 @@ const resolvers = {
     getMessage: () => {
       return 'Hello World!!!!';
     },
+    getAllMessages: () => {
+      return [{message: "test", id:"123"}, {message: "test2", id:"1234z"}]
+    }
   },
   Mutation: {
     createMessage: (_, { input }) => {
